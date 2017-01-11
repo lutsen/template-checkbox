@@ -1,0 +1,11 @@
+<input type="hidden" value="0" name="{{ property.name }}">
+<div class="form-group">
+	<label for="{{ property.name }}" class="col-sm-2 control-label">{{ property.description }}</label>
+	<div class="col-sm-10">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" id="{{ property.name }}" name="{{ property.name }}"{% if bean[property.name] %} checked{% endif %}>
+			</label>
+		</div>
+	</div>
+</div>
