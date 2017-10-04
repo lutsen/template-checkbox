@@ -1,5 +1,5 @@
 <input type="hidden" value="0" name="{{ property.name }}">
-<div class="form-group">
+<div class="form-group{% if property.required %} required{% endif %}">
 	<label for="{{ property.name }}" class="col-sm-2 control-label">{{ property.description }}</label>
 	<div class="col-sm-10">
 		<div class="checkbox">
